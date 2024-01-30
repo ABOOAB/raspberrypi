@@ -1,0 +1,11 @@
+[Unit]
+Description=Ogarden Python Application
+Documentation=https://github.com/drewlio/ogarden
+
+[Timer]
+# Run the task at 06:00 and 18:00
+OnCalendar=06,18:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
